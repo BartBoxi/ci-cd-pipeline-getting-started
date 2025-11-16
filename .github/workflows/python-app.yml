@@ -37,8 +37,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-
-  deploy:
+### ading deployment with a commented code which is explaining how to do it on prod server 
+  deploy:  
     runs-on: ubuntu-latest
     needs: build
     if: github.ref == 'refs/heads/main'
